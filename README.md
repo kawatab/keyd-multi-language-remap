@@ -89,7 +89,7 @@ sudo keyd reload
 
 ---
 
-<a name="日本語-japanese"></a>
+<a name="japanese"></a>
 
 ## 日本語
 
