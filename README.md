@@ -35,18 +35,18 @@ To avoid interfering with existing system shortcuts, this configuration uses the
 
 The `space_layer` provides intuitive access to:
 
-* **Arrows**: `e` `s` `d` `f` (Up/Left/Down/Right)
-* **Page Operations**: `w` (PgUp), `r` (PgDn), `a` (Home), `g` (End)
-* **Backspace**: `q`
+* **Arrows**: `E` `S` `D` `F` (Up/Left/Down/Right)
+* **Page Operations**: `W` (PgUp), `R` (PgDn), `A` (Home), `G` (End)
+* **Backspace**: `Q`
 
 ### Numpad Emulation
 
 A dedicated numpad layout is available within the `space_layer`:
 
 * **7 8 9 /** : `7` `8` `9` `0`
-* **4 5 6 *** : `u` `i` `o` `p`
-* **1 2 3 -** : `j` `k` `l` `;`
-* **0 , . +** : `m` `,` `.` `/`
+* **4 5 6 *** : `U` `I` `O` `P`
+* **1 2 3 -** : `J` `K` `L` `;`
+* **0 , . +** : `M` `,` `.` `/`
 
 ### Optimized for UltimateKEYS + Fcitx5 + Mozc
 
@@ -55,10 +55,11 @@ This setup is specifically designed for the following environment:
 * **Keyboard Layout**: A modified version of **UltimateKEYS** (with `Dead Greek` added to `Shift`+`AltGr`+`102nd`).
 * **Input Method**: **Fcitx5** with the **Mozc** engine.
 * **Language Switching**:
-* **Mozc (Hiragana)**: `Space` + `v`
-* **Mozc (Alphabet)**: `Space` + `c`
-* **Layout 1 (UltimateKEYS)**: `Space` + `x`
-* **Layout 2 (HU)**: `Space` + `z`
+* **Mozc (Hiragana)**: `Space` + `V`
+* **Mozc (Alphabet)**: `Space` + `C`
+* **Layout 1 (UltimateKEYS)**: `Space` + `X`
+* **Layout 3 (HU)**: `Space` + `Z`
+* **Layout 4 (RU)**: `Space` + `102nd`
 
 ---
 
@@ -77,7 +78,7 @@ sudo keyd reload
 * **Crucial**: Refer to the README in the `UltimateKEYS/` directory to apply the **"Dead Greek" modification** before using this keyd config.
 
 3. **Fcitx5 & Mozc**:
-* Refer to the README in the `fcitx5/` or `mozc\` directory for the **Input Method Selector** setup and **Mozc key bindings**.
+* Refer to the README in the `fcitx5/` or `mozc/` directory for the **Input Method Selector** setup and **Mozc key bindings**.
 * Ensure `imselector.conf` is placed in `~/.config/fcitx5/conf/`.
 
 ---
@@ -119,18 +120,18 @@ sudo keyd reload
 
 `space_layer` を使用することで、ホームポジションを崩さずに以下の操作が可能です：
 
-* **方向キー**: `e` `s` `d` `f`（上/左/下/右）
-* **ページ操作**: `w` (PgUp), `r` (PgDn), `a` (Home), `g` (End)
-* **Backspace**: `q`
+* **方向キー**: `E` `S` `D` `F`（上/左/下/右）
+* **ページ操作**: `W` (PgUp), `R` (PgDn), `A` (Home), `G` (End)
+* **Backspace**: `Q`
 
 ### テンキーエミュレーション
 
 `space_layer` 内でテンキー入力が可能です：
 
 * **7 8 9 /** : `7` `8` `9` `0`
-* **4 5 6 *** : `u` `i` `o` `p`
-* **1 2 3 -** : `j` `k` `l` `;`
-* **0 , . +** : `m` `,` `.` `/`
+* **4 5 6 *** : `U` `I` `O` `P`
+* **1 2 3 -** : `J` `K` `L` `;`
+* **0 , . +** : `M` `,` `.` `/`
 
 ### UltimateKEYS + Fcitx5 + Mozc への最適化
 
@@ -139,10 +140,11 @@ sudo keyd reload
 * **キーボード配列**: 修正版 **UltimateKEYS** (`Shift`+`AltGr`+`102nd` に `Dead Greek` を追加したもの)
 * **入力メソッド**: **Fcitx5** + **Mozc**
 * **言語・モード切り替え**:
-* **Mozc (ひらがな)**: `Space` + `v`
-* **Mozc (英数)**: `Space` + `c`
-* **第1レイアウト (UltimateKEYS)**: `Space` + `x`
-* **第2レイアウト (HU)**: `Space` + `z`
+* **Mozc (ひらがな)**: `Space` + `V`
+* **Mozc (英数)**: `Space` + `C`
+* **第1レイアウト (UltimateKEYS)**: `Space` + `X`
+* **第3レイアウト (HU)**: `Space` + `Z`
+* **第4レイアウト (HU)**: `Space` + `102nd`
 
 ---
 
@@ -161,7 +163,7 @@ sudo keyd reload
 * **重要**: この keyd 設定を使用する前に、`UltimateKEYS/` ディレクトリのREADMEを参照し、**「Dead Greek」の修正**を適用してください。
 
 3. **Fcitx5 & Mozc**:
-* `fcitx5/`もしくは`mozc\`ディレクトリのREADMEを参照し、**Input method selector**の設定と **Mozc のキーバインド**設定を行ってください。
+* `fcitx5/`もしくは`mozc/`ディレクトリのREADMEを参照し、**Input method selector**の設定と **Mozc のキーバインド**設定を行ってください。
 * `imselector.conf` を `~/.config/fcitx5/conf/` に配置する必要があります。
 
 ---
