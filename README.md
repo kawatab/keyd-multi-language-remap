@@ -44,7 +44,7 @@ The `space_layer` provides intuitive access to:
 A dedicated numpad layout is available within the `space_layer`:
 
 * **7 8 9 /** : `7` `8` `9` `0`
-* **4 5 6 *** : `U` `I` `O` `P`
+* **4 5 6 \*** : `U` `I` `O` `P`
 * **1 2 3 -** : `J` `K` `L` `;`
 * **0 , . +** : `M` `,` `.` `/`
 
@@ -129,7 +129,7 @@ sudo keyd reload
 `space_layer` 内でテンキー入力が可能です：
 
 * **7 8 9 /** : `7` `8` `9` `0`
-* **4 5 6 *** : `U` `I` `O` `P`
+* **4 5 6 \*** : `U` `I` `O` `P`
 * **1 2 3 -** : `J` `K` `L` `;`
 * **0 , . +** : `M` `,` `.` `/`
 
