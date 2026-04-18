@@ -58,7 +58,7 @@ E. When pressing `Space` + `102nd`
 これらの組み合わせは、誤操作を防ぐためにあえて複雑なものに設定されています。これらはkeydを介して実行されることを想定しています。
 
 ## 動作仕様
-A. `Space`+`X`を押した場合
+A. `Space`+`V`を押した場合
   1. keydが入力を`Ctrl`+`Alt`+`Shift`+`Super`+`F2`に変換し、続いてひらがなキーを送ります。
   2. Fcitx5が`Ctrl`+`Alt`+`Shift`+`Super`+`F2`を捕捉し、**第2レイアウト（Mozc）**に切り替えます。
   3. Fcitx5はその後のひらがなキーを無視します。
@@ -70,7 +70,7 @@ B. `Space`+`C`を押した場合
   3. Fcitx5はその後の`Shift`+ひらがなキーを無視します。
   4. Mozcが`Shift`+ひらがなを捕捉し、英数モードに切り替えます。
 
-C. `Space`+`V`を押した場合
+C. `Space`+`X`を押した場合
   1. keydが入力を`Ctrl`+`Alt`+`Shift`+`Super`+`F1`に変換します。
   2. Fcitx5が`Ctrl`+`Alt`+`Shift`+`Super`+`F1`を捕捉し、**第1レイアウト（UltimateKEYS）**に切り替えます。
 
