@@ -26,10 +26,10 @@ The configuration enhances text navigation and IME control while maintaining erg
 
 ### Space-Overload (Dual-role Spacebar)
 
-To avoid interfering with existing system shortcuts, this configuration uses the **Spacebar** as a dual-role key:
+To avoid interfering with existing system shortcuts, this configuration uses the **Spacebar** as a dual-role key with a **200ms hold threshold**:
 
-* **Tap**: Sends `Space`.
-* **Hold**: Activates the `space_layer` (custom navigation and function layer).
+* **Tap** (< 200ms): Sends `Space`.
+* **Hold** (≥ 200ms): Activates the `space_layer` (custom navigation and function layer).
 
 ### Navigation & Editing (ESDF keys)
 
@@ -48,6 +48,28 @@ A dedicated numpad layout is available within the `space_layer`:
 * **1 2 3 -** : `J` `K` `L` `;`
 * **0 , . +** : `M` `,` `.` `/`
 
+### Mouse Button Layers
+
+Mouse thumb buttons (4th and 5th buttons) activate specialized navigation layers:
+
+* **4th Button** (Thumb Back): Activates `m1_layer` for back/navigation commands.
+* **5th Button** (Thumb Forward): Activates `m2_layer` for forward/navigation commands.
+
+### Mouse Wheel Emulation
+
+The middle mouse button supports context-aware behavior:
+
+* **Tap** `Ctrl+V` (< 200ms): Sends middle mouse click.
+* **Hold** `Ctrl+V` (≥ 200ms): Enables mouse scroll wheel functionality.
+
+### Modifier + Space Behavior
+
+When holding `Shift`, `Ctrl`, `Alt`, or `Meta` keys while pressing space:
+
+* **Tap**: Sends the modified space (`Shift+Space`, `Ctrl+Space`, etc.).
+* **Hold**: Activates `space_layer` while retaining the modifier key context.
+* **Side effects** (with Shift): Additional bindings for `S+Insert` and `S+Delete` via mouse buttons.
+
 ### Optimized for UltimateKEYS + Fcitx5 + Mozc
 
 This setup is specifically designed for the following environment:
@@ -60,6 +82,15 @@ This setup is specifically designed for the following environment:
 * **Layout 1 (UltimateKEYS)**: `Space` + `X`
 * **Layout 3 (HU)**: `Space` + `Z`
 * **Layout 4 (RU)**: `Space` + `102nd`
+
+---
+
+## Hardware Support
+
+**Tested Devices:**
+* **Kensington TrackBall Orbit** (Product ID: 047d:80fa)
+  - 4th and 5th mouse buttons fully integrated for layer switching
+  - Mouse wheel emulation via center-click behavior
 
 ---
 
@@ -86,7 +117,8 @@ sudo keyd reload
 ## Notes
 
 * **Important**: This configuration **requires** the modified UltimateKEYS layout. It will not work correctly unless "Dead Greek" has been implemented as described in the `UltimateKEYS/` README.
-* These configurations are tailored for a specific workflow and hardware; you may need to adjust device names or keycodes for your system.
+* These configurations are tailored for a specific workflow and hardware (Kensington TrackBall Orbit); you may need to adjust device IDs and keycodes for your system.
+* Mouse button behavior is specific to the tested device; verify mouse button IDs match your hardware (`keyd list-keys` to check).
 
 ---
 
@@ -111,10 +143,10 @@ sudo keyd reload
 
 ### スペースキーの多機能化 (Space-Overload)
 
-既存のショートカットとの衝突を避けるため、スペースキーに2つの役割を持たせています：
+既存のショートカットとの衝突を避けるため、スペースキーに2つの役割を持たせています。ホールド判定は **200ms** です：
 
-* **タップ時**: `Space` を入力。
-* **ホールド時**: `space_layer`（ナビゲーション・関数レイヤー）を有効化。
+* **タップ時** (< 200ms): `Space` を入力。
+* **ホールド時** (≥ 200ms): `space_layer`（ナビゲーション・関数レイヤー）を有効化。
 
 ### カーソル操作・編集 (ESDFキー)
 
@@ -133,6 +165,28 @@ sudo keyd reload
 * **1 2 3 -** : `J` `K` `L` `;`
 * **0 , . +** : `M` `,` `.` `/`
 
+### マウスボタンレイヤー
+
+マウスのサイドボタン（第4、第5ボタン）でナビゲーションレイヤーを切り替え可能：
+
+* **第4ボタン**（親指・戻る）: `m1_layer` をアクティベート。
+* **第5ボタン**（親指・進む）: `m2_layer` をアクティベート。
+
+### マウスホイールエミュレーション
+
+中央ボタンのコンテキスト対応動作：
+
+* **タップ** `Ctrl+V` (< 200ms): 中央クリックを送信。
+* **ホールド** `Ctrl+V` (≥ 200ms): スクロールホイール機能を有効化。
+
+### 修飾キー + スペース動作
+
+`Shift`、`Ctrl`、`Alt`、`Meta` キーを押しながらスペースを操作する場合：
+
+* **タップ時**: 修飾キー付きのスペース (`Shift+Space` など) を送信。
+* **ホールド時**: 修飾キーのコンテキストを保持しながら `space_layer` をアクティベート。
+* **Shift時の追加機能**: マウスボタンに `Shift+Insert`/`Shift+Delete` を割り当て。
+
 ### UltimateKEYS + Fcitx5 + Mozc への最適化
 
 以下の環境を前提とした設計になっています：
@@ -145,6 +199,15 @@ sudo keyd reload
 * **第1レイアウト (UltimateKEYS)**: `Space` + `X`
 * **第3レイアウト (HU)**: `Space` + `Z`
 * **第4レイアウト (HU)**: `Space` + `102nd`
+
+---
+
+## ハードウェアサポート
+
+**動作確認済みデバイス:**
+* **Kensington TrackBall Orbit** (Product ID: 047d:80fa)
+  - 第4、第5マウスボタンを完全に統合したレイヤー切り替え対応
+  - 中央クリックによるマウスホイールエミュレーション機能
 
 ---
 
@@ -171,7 +234,8 @@ sudo keyd reload
 ## 注意事項
 
 * **重要**: この設定は、修正版の UltimateKEYS レイアウトを**必要とします**。`UltimateKEYS/` の README に記載されている「Dead Greek」の実装が行われていない場合、正しく動作しません。
-* この設定は特定のワークフローやハードウェアに合わせて調整されているため、お使いの環境に応じてデバイス名やキーコードの変更が必要な場合があります。
+* この設定は特定のワークフローやハードウェア（Kensington TrackBall Orbit）に合わせて調整されているため、お使いの環境に応じてデバイス ID やキーコードの変更が必要な場合があります。
+* マウスボタンの動作は使用デバイスに依存します。お使いのデバイスのマウスボタン ID と一致することを確認してください（`keyd list-keys` でご確認ください）。
 
 ---
 
