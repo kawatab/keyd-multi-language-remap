@@ -4,6 +4,10 @@
 
 ---
 
+![Keyboard layout](images/keyboard-2026-07-12.png)
+
+![Trackball button layout](images/trackball-2026-07.12.png)
+
 <a name="english"></a>
 
 ## English
@@ -68,8 +72,8 @@ A standard numeric keypad layout (inspired by ISO/IEC 9995-2) mapped to the righ
 
 On many modern compact keyboards, editing keys like `Home`, `End`, `PgUp`, and `PgDn` are either omitted or buried under awkward `Fn` key combinations. For layouts with a numeric cluster, this configuration provides a fallback to bypass this limitation:
 
-* When `Shift` is held, the numpad keys automatically morph into directional and editing actions (`kp7` → `Home`, `kp1` → `End`, etc.), perfectly replicating native Windows behavior on Linux.
-* **Note**: This feature does not support simultaneous dual-Shift presses.
+* When `Space` is held, the numpad keys automatically morph into directional and editing actions (`kp7` → `Home`, `kp1` → `End`, etc.), perfectly replicating native Windows behavior on Linux.
+* **Note:** While `Shift` is used on Windows, `Space` is used here instead because keyd and most keyboards do not support simultaneous dual-Shift presses.
 
 ### Universal Trackball Navigation Chording
 
@@ -237,8 +241,8 @@ sudo keyd reload
 
 近年のコンパクトなキーボードやノートPCでは、`Home` / `End` / `PgUp` / `PgDn` といった編集用のキーが排除されていたり、`Fn`キーとの同時押しを強要されるなど、非常に押しにくい位置に配置されているケースが目立ちます。本設定では、テンキー（またはそれに準ずるカスタムテンキー層）を有効活用し、この物理的課題を解決する手段を実装しています：
 
-* `Shift`をホールドしている間、テンキー側が自動的にカーソル移動や編集キー（`kp7` → `Home`、`kp1` → `End` など）へと変化し、Windowsと全く同様の直感的なナビゲーション挙動をLinux上で再現します。
-* **注意点**: 本機能は左右のShiftキー同時押し（両押し）には非対応です。
+* `Space`をホールドしている間、テンキー側が自動的にカーソル移動や編集キー（`kp7` → `Home`、`kp1` → `End` など）へと変化し、Windowsと全く同様の直感的なナビゲーション挙動をLinux上で再現します。
+* **注意点**: Windowsでは`Shift`キーを使いますが、keydや多くのキーボードが左右のShiftキーの同時押しに対応していないので、代わりに`Space`キーを使います。
 
 ### トラックボールのサイドボタン同時押しによるユニバーサル・ナビゲーション
 トラックボールの物理的な **Back（戻る）** および **Forward（進む）** ボタンを、それ自体が独自のカスタム修飾キーとして機能するように定義しています。
