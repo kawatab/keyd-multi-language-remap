@@ -6,6 +6,8 @@
 
 ![Keyboard layout](images/keyboard-2026-07-12.png)
 
+![Keyboard layout](images/keyboard-2026-09-20.png)
+
 <img src="images/trackball-2026-07.12.png" alt="Trackball button layout" width="400">
 
 <a name="english"></a>
