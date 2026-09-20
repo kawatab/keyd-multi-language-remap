@@ -53,19 +53,19 @@ This system coordinates **UltimateKEYS**, **Hungarian (HU)**, **Russian (RU)** l
   * **Tap** (< 150ms): Functions as a **Universal `Compose` key** (`Multi_key`).
 
 * **Language & Mode Switching (Simultaneous press with `Space`):**
-  * **Mozc (Hiragana)**: `Space` + `V`
-  * **Mozc (Alphabet)**: `Space` + `C`
-  * **Layout 1 (UltimateKEYS)**: `Space` + `X`
-  * **Layout 3 (HU)**: `Space` + `Z`
-  * **Layout 4 (RU)**: `Space` + `102nd`
+  * **Mozc (Hiragana)**: `Space` + `H` (`Space` + `V`)
+  * **Mozc (Alphabet)**: `Space` + `J` (`Space` + `C`)
+  * **Layout 1 (UltimateKEYS)**: `Space` + `K` (`Space` + `X`)
+  * **Layout 3 (HU)**: `Space` + `L` (`Space` + `Z`)
+  * **Layout 4 (RU)**: `Space` + `;` (`Space` + `102nd`)
 
 ### Numpad Emulation
 
-A standard numeric keypad layout (inspired by ISO/IEC 9995-2) mapped to the right-hand keys within the `space_layer`.
+A standard numeric keypad layout (inspired by ISO/IEC 9995-2) mapped to the right-hand keys `n_layer`, activated by holding `N`.
 
-* **7 8 9 /** : `7` `8` `9` `0`
-* **4 5 6 \*** : `U` `I` `O` `P`
-* **1 2 3 -** : `J` `K` `L` `;`
+* **Calc 7 8 9 /** : `6` `7` `8` `9` `0`
+* **CE 4 5 6 \*** : `Y` `U` `I` `O` `P`
+* **± 1 2 3 -** : `H` `J` `K` `L` `;`
 * **0 , . +** : `M` `,` `.` `/`
 
 ### Windows-Style Numpad Navigation Fallback
@@ -169,6 +169,34 @@ sudo keyd reload
 4. **Mouse Scripts**:
 * Place `mouse-accel-scripts` into your environment and map your Desktop Environment (e.g., KDE Plasma) global shortcuts to execute them using your keyboard's media keys.
 
+## Update History
+
+### 2026-09-20 Remap numpad and language switching layers
+
+- Moved numpad emulation from Space to N
+- Added HJKL; as new language switching keys while retaining the old mappings
+- Moved Windows-style numpad navigation from Shift to `Space`
+
+### 2026-06-02 Restructure remapping logic in README and implement multi-device optimization
+
+- Implemented rightalt dual-role, Krita panning workaround, and Windows-style numpad navigation fallback.
+- Added specific configuration for legacy wheel-less 2-button trackballs using tap/hold and chording methods.
+- Introduced KWin-based pointer acceleration toggle scripts mapped to CapsLock macro/media keys for physical feedback.
+
+### 2026-05-08 Enhanced keybinding configuration and added mouse side-button layers
+
+### 2026-04-18 Removed unused keybindings
+
+- The Right Alt key now works as a modifier key at any time.
+
+### 2026-03-14 Add 4th language support and switch keybindings to Function keys
+
+- Modified the key codes used for language switching.
+
+### 2026-03-01 Initial commit
+
+- Keyd configuration for Multi-Language.
+
 ---
 
 ## Notes
@@ -222,19 +250,19 @@ sudo keyd reload
   * **タップ時** (< 150ms): 選択しているレイアウトを問わず一発で機能する **共通の `Compose`（コンポーズ）キー**（`Multi_key`）として動作します。
 
 * **言語・モード切り替え（`Space` キーとの同時押し）:**
-  * **Mozc (ひらがな)**: `Space` + `V`
-  * **Mozc (英数)**: `Space` + `C`
-  * **第1レイアウト (UltimateKEYS)**: `Space` + `X`
-  * **第3レイアウト (HU - ハンガリー語)**: `Space` + `Z`
-  * **第4レイアウト (RU - ロシア語)**: `Space` + `102nd`
+  * **Mozc (ひらがな)**: `Space` + `H` (`Space` + `V`)
+  * **Mozc (英数)**: `Space` + `J` (`Space` + `C`)
+  * **第1レイアウト (UltimateKEYS)**: `Space` + `K` (`Space` + `X`)
+  * **第3レイアウト (HU - ハンガリー語)**: `Space` + `L` (`Space` + `Z`)
+  * **第4レイアウト (RU - ロシア語)**: `Space` + `;` (`Space` + `102nd`)
 
 ### テンキーエミュレーション
 
-`space_layer` 展開時、右手側キーが ISO/IEC 9995-2 規格に準拠したテンキー配列へと変化します。
+`N`キーを押して`n_layer` 展開時、右手側キーが ISO/IEC 9995-2 規格に準拠したテンキー配列へと変化します。
 
-* **7 8 9 /** : `7` `8` `9` `0`
-* **4 5 6 \*** : `U` `I` `O` `P`
-* **1 2 3 -** : `J` `K` `L` `;`
+* **Calc 7 8 9 /** : `6` `7` `8` `9` `0`
+* **CE 4 5 6 \*** : `Y` `U` `I` `O` `P`
+* **± 1 2 3 -** : `H` `J` `K` `L` `;`
 * **0 , . +** : `M` `,` `.` `/`
 
 ### Windows風テンキーナビゲーション
